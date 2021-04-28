@@ -24,6 +24,14 @@ public class User {
         this.numTel = numTel;
     }
 
+    public User(String firstName, String lastName, String adress, String email, String numTel) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.adress = adress;
+        this.email = email;
+        this.numTel = numTel;
+    }
+
     public Integer getId() {
         return idUser;
     }

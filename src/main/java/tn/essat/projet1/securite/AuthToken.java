@@ -9,7 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
-import tn.essat.projet1.Response.Jwt;
+import tn.essat.projet1.Response.JwtResponse;
 import tn.essat.projet1.securite.service.UserServiceImpl;
 
 import javax.servlet.FilterChain;
@@ -24,7 +24,7 @@ public class AuthToken extends OncePerRequestFilter {
     @Autowired
     UserServiceImpl userService;
     private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(AuthToken.class);
-    private Jwt jwt;
+    private JwtResponse jwt;
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         try {

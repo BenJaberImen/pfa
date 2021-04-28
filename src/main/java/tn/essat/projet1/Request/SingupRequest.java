@@ -21,6 +21,7 @@ public class SingupRequest {
     private String numTel;
     @NotBlank
     private Set<String> role;
+    //private String user;
 
     public String getLogin() {
         return login;
@@ -85,4 +86,14 @@ public class SingupRequest {
     public void setRole(Set<String> role) {
         this.role = role;
     }
+
+  /*  public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+   */
 }

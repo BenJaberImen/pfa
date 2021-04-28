@@ -28,6 +28,12 @@ public class Compte {
         this.roles = roles;
     }
 
+    public Compte(String login, String password, User user) {
+        this.login = login;
+        this.password = password;
+        this.user = user;
+    }
+
     public Integer getIdCompte() {
         return idCompte;
     }
