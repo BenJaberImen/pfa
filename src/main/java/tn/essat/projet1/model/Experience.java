@@ -1,4 +1,4 @@
 package tn.essat.projet1.model;
 
-public class Offre {
+public class Experience {
 }
